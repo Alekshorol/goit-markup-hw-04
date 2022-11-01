@@ -334,7 +334,7 @@ body {
 .batton {
   border-radius: 50%;
   margin-right: 10px;
-  background: var(--white-color);
+  background-color: var(--white-color);
   cursor: pointer;
 }
 
@@ -349,11 +349,10 @@ body {
   display: flex;
   margin-left: 32px;
 }
-
-.batton:hover,
-.batton:focus {
+.batton-icon:hover,
+.batton:hover {
   background-color: var(--title-text-color);
-  color: var(--white-color);
+  fill: var(--white-color);
 }
 
 /* footer */
