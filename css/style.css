@@ -6,7 +6,7 @@
   --studio-color: #000000;
   --background-color-hero-roof: #2f303a;
   --background-color-team: #f5f4fa;
-  --mail-tel-cololr: rgba(117, 117, 117, 1);
+  --mail-tel-color: rgba(117, 117, 117, 1);
   --list-color: rgba(255, 255, 255, 0.6);
   --backgroun-color-button: #f5f4fa;
   --line-color-header: rgba(236, 236, 236, 1);
@@ -16,6 +16,8 @@
   --set-line-px: 30px;
   --gradient-hero: rgba(47, 48, 58, 0.4);
   --background-hero: rgba(196, 196, 196, 1);
+  --background-color-advetges: rgba(245, 244, 250, 1);
+  --social-color: rgba(175, 177, 184, 1);
 }
 
 /* utilite */
@@ -122,15 +124,22 @@ body {
   text-decoration: none;
 }
 
-.link-item {
+.link-icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: var(--primary-text-color);
+  color: var(--mail-tel-color);
 }
 
-.link-item :hover,
-.link-item :focus {
+.link-icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  color: var(--mail-tel-color);
+}
+
+.link-icon-tel :hover,
+.link-icon-tel :focus {
   color: var(--title-text-color);
 }
 
@@ -160,6 +169,9 @@ body {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
 }
 
 .auth-nav .item + .item {
@@ -225,6 +237,18 @@ body {
   padding-bottom: 0;
 }
 
+.advantges-icon {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--background-color-advetges);
+  border-radius: 4px;
+}
+
+.icon-advantges {
+  width: 70px;
+  height: 70px;
+}
+
 /* work */
 
 .section-work-title {
@@ -287,7 +311,7 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
-  margin-bottom: 0;
+  margin-bottom: 16px;
   margin-top: 0;
 }
 
@@ -304,7 +328,32 @@ body {
 .section-team {
   display: flex;
   gap: 30px;
-  flex-basis: calc((100%-90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.batton {
+  border-radius: 50%;
+  margin-right: 10px;
+  background: var(--white-color);
+  cursor: pointer;
+}
+
+.batton-icon {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 3px;
+  fill: var(--social-color);
+}
+
+.conainer-social {
+  display: flex;
+  margin-left: 32px;
+}
+
+.batton:hover,
+.batton:focus {
+  background-color: var(--title-text-color);
+  color: var(--white-color);
 }
 
 /* footer */
