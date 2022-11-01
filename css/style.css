@@ -126,7 +126,7 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 .link-item :hover,
@@ -168,8 +168,6 @@ body {
 
 /* Hero */
 
-
-
 .hero {
   display: block;
   margin-left: auto;
@@ -178,13 +176,12 @@ body {
   height: 600px;
   text-align: center;
   background: var(--background-hero);
-  background-image: linear-gradient( var(--gradient-hero), var(--gradient-hero)), url(../images/imgbackgroundhero.jpg) ;
+  background-image: linear-gradient(var(--gradient-hero), var(--gradient-hero)),
+    url(../images/imgbackgroundhero.jpg);
   padding: 200px 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
-
 }
 
 .hero-title {
