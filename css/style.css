@@ -181,6 +181,7 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: rgba(117, 117, 117, 1);
+  vertical-align: middle;
 }
 
 .link-icon-tel {
@@ -188,6 +189,7 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: rgba(117, 117, 117, 1);
+  vertical-align: middle;
 }
 
 .link-icon-tel:hover,
@@ -513,10 +515,10 @@ body {
   margin-top: 9px;
 }
 
-.container-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.footer-social {
+  justify-content: flex-start;
+  
 }
 
 /* portfolio */
