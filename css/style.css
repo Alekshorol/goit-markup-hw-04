@@ -163,25 +163,17 @@ body {
 }
 
 .link-icon-mail {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
-  fill: rgba(117, 117, 117, 1);
+  fill: currentColor;
   vertical-align: middle;
 }
 
 .link-icon-tel {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
-  fill: rgba(117, 117, 117, 1);
+  fill: currentColor;
   vertical-align: middle;
 }
 
-.link-icon-tel:hover,
-.link-icon-mail:hover {
-  fill: var(--title-text-color);
-}
 
 .site-nav :hover,
 .site-nav :focus {
@@ -393,8 +385,9 @@ body {
   display: flex;
   margin-left: 32px;
 }
-.batton-icon:hover,
-.batton:hover {
+
+.batton:hover,
+.batton-icon:hover{
   background-color: var(--title-text-color);
   fill: var(--white-color);
 }
@@ -412,42 +405,42 @@ body {
 }
 
 .icon.company.one {
-  border: 1px solid;
+  border: 1px solid var(--social-color);
   padding: 21px 64px;
   border-radius: 4px;
   fill: var(--social-color);
   cursor: pointer;
 }
 .icon.company.two {
-  border: 1px solid;
+  border: 1px solid var(--social-color);
   padding: 20px 65px;
   border-radius: 4px;
   fill: var(--social-color);
   cursor: pointer;
 }
 .icon.company.three {
-  border: 1px solid;
+  border: 1px solid var(--social-color);
   padding: 25px 63px;
   border-radius: 4px;
   fill: var(--social-color);
   cursor: pointer;
 }
 .icon.company.four {
-  border: 1px solid;
+  border: 1px solid var(--social-color);
   padding: 25px 43px;
   border-radius: 4px;
   fill: var(--social-color);
   cursor: pointer;
 }
 .icon.company.five {
-  border: 1px solid;
+  border: 1px solid var(--social-color);
   padding: 23px 54px;
   border-radius: 4px;
   fill: var(--social-color);
   cursor: pointer;
 }
 .icon.company.six {
-  border: 1px solid;
+  border: 1px solid var(--social-color);
   padding: 23px 38px 25px 38px;
   border-radius: 4px;
   fill: var(--social-color);
@@ -464,11 +457,21 @@ body {
   fill: var(--title-text-color);
 }
 
-.company-item:hover {
-  color: var(--title-text-color);
+.icon.company:hover {
+  border-color: var(--title-text-color);
 }
 
 /* footer */
+
+.container-footer-first {
+  width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: auto;
+}
+
+
 
 .footer {
   background-color: var(--background-color-hero-roof);
@@ -481,12 +484,13 @@ body {
 }
 
 .container.social {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 .roof-addres {
   margin-top: 20px;
   margin-bottom: 9px;
+ 
 }
 
 .address {
@@ -534,7 +538,7 @@ body {
 }
 
 .link-item:hover {
-  color: var(--title-text-color);
+  background-color: var(--title-text-color);
 }
 
 .social-footer {
