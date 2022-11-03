@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header line">
+    <header class="page-header">
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="./index.html" class="logo"
@@ -35,13 +35,20 @@
         </nav>
         <ul class="auth-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="contact-link">
+              <svg class="link-icon-mail">
+                <use href="./images/icons.svg#convert"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contact-link"
-              >+38 096 111 11 11</a
+            <a href="tel:+380961111111" class="contact-link">
+              <svg class="link-icon-tel">
+                <use href="./images/icons.svg#telefone"></use>
+              </svg>
+
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -53,7 +60,9 @@
         <div class="container">
           <h1 class="visually-hidden">Усі проекти</h1>
           <ul class="batton-projects list">
-            <li><button type="button" class="buttom-all">Усі</button></li>
+            <li>
+              <button type="button" class="button-secondary all">Усі</button>
+            </li>
             <li>
               <button type="button" class="button-secondary web">
                 Веб-сайти
@@ -145,25 +154,53 @@
       </section>
     </main>
     <!-- секция футер -->
-    <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="studiowhite">Studio</span></a
-        >
-        <address class="roof-addres link">
-          <a href="" class="address">м. Київ, пр-т Лесі Українки, 26</a>
-        </address>
-        <ul class="list">
-          <li class="contact-list">
-            <a href="mailto:info@devstudio.com" class="contacts"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-list">
-            <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <div class="container-hero">
+      <footer class="footer">
+        <div class="container-footer">
+          <a href="./index.html" class="logo"
+            >Web<span class="studiowhite">Studio</span></a
+          >
+          <address class="roof-addres link">
+            <a href="" class="address">м. Київ, пр-т Лесі Українки, 26</a>
+          </address>
+          <ul class="list">
+            <li class="contact-list">
+              <a href="mailto:info@devstudio.com" class="contacts"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-list">
+              <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container social">
+          <h2 class="item-footer">приєднуйтесь</h2>
+          <ul class="social-footer list">
+            <li class="link-item">
+              <svg class="link-item-social">
+                <use href="./images/icons.svg#instagramfooter1"></use>
+              </svg>
+            </li>
+            <li class="link-item">
+              <svg class="link-item-social">
+                <use href="./images/icons.svg#birdfooter2"></use>
+              </svg>
+            </li>
+            <li class="link-item">
+              <svg class="link-item-social">
+                <use href="./images/icons.svg#facefooter3"></use>
+              </svg>
+            </li>
+            <li class="link-item">
+              <svg class="link-item-social">
+                <use href="./images/icons.svg#infooter4"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
