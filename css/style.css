@@ -18,6 +18,7 @@
   --background-hero: rgba(196, 196, 196, 1);
   --background-color-advetges: rgba(245, 244, 250, 1);
   --social-color: rgba(175, 177, 184, 1);
+  --background-social-footer: rgba(255, 255, 255, 0.1);
 }
 
 /* utilite */
@@ -218,7 +219,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   text-align: center;
   background: var(--background-hero);
@@ -272,12 +273,13 @@ body {
 }
 
 .advantges-icon {
-  padding: 25px 100px;
+  display: flex;
   margin-bottom: 30px;
+  justify-content: center;
   background-color: var(--background-color-advetges);
   border-radius: 4px;
-  width: 270px;
   height: 120px;
+  align-items: center;
 }
 
 .icon-advantges {
@@ -367,30 +369,40 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-/* social batton */
+/* social */
 
-.batton {
-  border-radius: 50%;
-  margin-right: 10px;
-  cursor: pointer;
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.batton-icon {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 2px;
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.socials-icon {
   fill: var(--social-color);
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--white-color);
+}
+.socials-link:hover {
+  background-color: var(--title-text-color);
 }
 
 .container-social {
   display: flex;
   margin-left: 32px;
-}
-
-.batton:hover,
-.batton-icon:hover {
-  background-color: var(--title-text-color);
-  fill: var(--white-color);
 }
 
 /* company */
@@ -405,85 +417,49 @@ body {
   margin-bottom: 50px;
 }
 
-.icon.company.one {
-  border: 1px solid var(--social-color);
-  padding: 21px 64px;
-  border-radius: 4px;
-  fill: var(--social-color);
-  cursor: pointer;
-}
-.icon.company.two {
-  border: 1px solid var(--social-color);
-  padding: 20px 65px;
-  border-radius: 4px;
-  fill: var(--social-color);
-  cursor: pointer;
-}
-.icon.company.three {
-  border: 1px solid var(--social-color);
-  padding: 25px 63px;
-  border-radius: 4px;
-  fill: var(--social-color);
-  cursor: pointer;
-}
-.icon.company.four {
-  border: 1px solid var(--social-color);
-  padding: 25px 43px;
-  border-radius: 4px;
-  fill: var(--social-color);
-  cursor: pointer;
-}
-.icon.company.five {
-  border: 1px solid var(--social-color);
-  padding: 23px 54px;
-  border-radius: 4px;
-  fill: var(--social-color);
-  cursor: pointer;
-}
-.icon.company.six {
-  border: 1px solid var(--social-color);
-  padding: 23px 38px 25px 38px;
-  border-radius: 4px;
-  fill: var(--social-color);
-  cursor: pointer;
-}
-
-.box {
+.companies {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  flex-basis: calc((100% - 150px) / 6);
 }
 
-.icon.company:hover {
+.companies-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--social-color);
+}
+
+.companies-icon {
+  fill: var(--social-color);
+}
+.companies-link:hover .companies-icon,
+.companies-link:focus .companies-icon {
   fill: var(--title-text-color);
 }
 
-.icon.company:hover {
+.companies-link:hover {
   border-color: var(--title-text-color);
 }
 
 /* footer */
+.container-footer {
+  display: flex;
+}
 
-.container-footer-first {
-  width: 1600px;
-  height: 252px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
+.social {
+  margin-left: 70px;
+  padding: 60px 0;
 }
 
 .footer {
   background-color: var(--background-color-hero-roof);
-  padding: 60px 0;
-  display: flex;
-}
-
-.container-footer {
-  margin-left: 215px;
-}
-
-.container.social {
-  margin-left: 80px;
+  padding: 60px 15px;
 }
 
 .roof-addres {
@@ -520,29 +496,43 @@ body {
   color: var(--white-color);
 }
 
-.link-item-social {
-  width: 20px;
-  height: 20px;
-  fill: var(--white-color);
-}
-
-.link-item {
-  width: 44px;
-  height: 44px;
-  padding: 11px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-}
-
-.link-item:hover {
-  background-color: var(--title-text-color);
-}
-
 .social-footer {
   display: flex;
   gap: 10px;
   flex-basis: calc((100% - 30px) / 4);
+}
+
+.company-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.socials-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.socials-footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-social-footer);
+}
+
+.socials-footer-icon {
+  fill: var(--white-color);
+}
+.socials-footer:focus,
+.socials-footer-item:hover {
+  background-color: var(--title-text-color);
 }
 
 /* portfolio */
