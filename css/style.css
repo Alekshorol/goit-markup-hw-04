@@ -85,12 +85,14 @@ body {
   border-radius: 4px;
   background: var(--backgroun-color-button);
   padding: 6px 22px;
+  box-shadow: transparent;
 }
 
 .button-secondary:hover,
 .button-secondary:focus {
   background-color: var(--title-text-color);
   color: var(--white-color);
+  box-shadow: var(--shadov-color-team);
 }
 
 .page-header {
@@ -568,6 +570,14 @@ body {
   gap: 8px;
   flex-basis: calc((100%-32px) / 5);
   margin-bottom: 50px;
+}
+
+.items {
+  box-shadow: transparent;
+}
+
+.items:hover {
+  box-shadow: var(--shadov-color-team);
 }
 
 /* card */
