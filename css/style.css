@@ -29,6 +29,10 @@
   margin: 0;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -391,18 +395,12 @@ body {
 .socials-icon {
   fill: var(--social-color);
 }
-
+.socials-link:hover,
+.socials-link:focus,
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
-  fill: var(--white-color);
-}
-.socials-link:hover {
   background-color: var(--title-text-color);
-}
-
-.container-social {
-  display: flex;
-  margin-left: 32px;
+  fill: var(--white-color);
 }
 
 /* company */
@@ -454,12 +452,11 @@ body {
 
 .social {
   margin-left: 70px;
-  padding: 60px 0;
 }
 
 .footer {
   background-color: var(--background-color-hero-roof);
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 .roof-addres {
@@ -514,10 +511,12 @@ body {
 
 .socials-footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
-.socials-footer-item {
+.socials-footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,9 +529,12 @@ body {
 .socials-footer-icon {
   fill: var(--white-color);
 }
-.socials-footer:focus,
-.socials-footer-item:hover {
+.socials-footer-link:hover,
+.socials-footer-link:focus,
+.socials-footer-link:hover .socials-footer-icon,
+.socials-footer-link:focus .socials-footer-icon {
   background-color: var(--title-text-color);
+  fill: var(--white-color);
 }
 
 /* portfolio */
@@ -567,6 +569,10 @@ body {
 }
 
 .items:hover {
+  box-shadow: var(--shadov-color-team);
+}
+
+.cards:focus {
   box-shadow: var(--shadov-color-team);
 }
 
