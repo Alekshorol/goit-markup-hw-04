@@ -568,11 +568,8 @@ body {
   box-shadow: transparent;
 }
 
+.items:focus,
 .items:hover {
-  box-shadow: var(--shadov-color-team);
-}
-
-.cards:focus {
   box-shadow: var(--shadov-color-team);
 }
 
