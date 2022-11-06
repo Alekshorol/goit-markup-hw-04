@@ -564,12 +564,16 @@ body {
   margin-bottom: 50px;
 }
 
-.items {
+.cards-link {
   box-shadow: transparent;
 }
 
-.items:focus,
-.items:hover {
+.cards-link {
+  display: block;
+}
+
+.cards-link:focus,
+.cards-link:hover {
   box-shadow: var(--shadov-color-team);
 }
 
